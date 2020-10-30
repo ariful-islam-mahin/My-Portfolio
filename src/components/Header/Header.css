@@ -1,0 +1,33 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.header{
+    position: relative;
+    padding: 150px 0px 250px 0px;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    clip-path: polygon(100% 50%, 0 100%, 100% 120%);
+}
+.blogs{
+    position: relative;
+}
+.blogs:before{
+    content: '';
+    position: absolute;
+    bottom: -48px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #343a40;
+    clip-path: polygon(100% 50%, 0 100%, 100% 120%);
+}
