@@ -31,3 +31,36 @@
     background: #343a40;
     clip-path: polygon(100% 50%, 0 100%, 100% 120%);
 }
+
+.icon{
+    font-size: 30px;
+    margin: 5px 4px;
+    color: #cecece;
+}
+
+.icon:hover{
+    color: white;
+}
+
+.myPicture{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid gray;
+    margin-bottom: 10px;
+}
+
+.text-box{
+    width: 650px;
+}
+
+@media screen and (max-width: 768px) {
+    .myPicture{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-box{
+        width: 300px;
+    }
+}

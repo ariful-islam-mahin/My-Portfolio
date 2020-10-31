@@ -2,6 +2,8 @@ import { Dialog, DialogActions, DialogContent, DialogTitle } from '@material-ui/
 import React, { useState } from 'react';
 import resume from '../../Resume.pdf';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
     const [open, setOpen] = useState(false);
@@ -29,13 +31,23 @@ const About = () => {
         <div id="about" className="text-center text-white bg-dark pb-5 about">
             <div className="container">
                 <h1 className="py-3">About</h1>
-                <img style={{width:"200px", borderRadius:"50%", border:"5px solid gray"}} src="https://i.postimg.cc/Dy1ZMsks/Pics-Art-10-21-08-20-34-Original.jpg" alt=""/>
-                <h5  className="mx-auto my-3">
-                    Me, Ariful Islam Mahin working as a Front End developer.<br/>
-                    I have come in the web development world only for my passion.<br/> I love creating and developing websites more than any other works.
+                <img className="myPicture" src="https://i.postimg.cc/Dy1ZMsks/Pics-Art-10-21-08-20-34-Original.jpg" alt=""/>
+                <br/>
+                <a href="https://www.facebook.com/arifulislam.mahin.718689" target="_blank">
+                <FontAwesomeIcon className="icon" icon={faFacebookSquare} />
+                </a>
+                <a href="https://www.linkedin.com/in/ariful-islam-mahin/" target="_blank">
+                    <FontAwesomeIcon className="icon" icon={faLinkedin} />
+                </a>
+                <a href="https://github.com/ariful-islam-mahin" target="_blank">
+                    <FontAwesomeIcon className="icon" icon={faGithubSquare} />
+                </a>
+                <h5 className="mx-auto my-3 text-box">
+                    Me, Ariful Islam Mahin working as a Front End developer.
+                    I have come in the web development world only for my passion. I love creating and developing websites more than any other works.
                 </h5>
-                <button onClick={handleClickOpen} className="btn btn-outline-primary mx-1">Send Message</button>
-                <a href={resume} download="ArifulIslamMahinResume" className="btn btn-primary mx-1">Download Resume</a>
+                <button onClick={handleClickOpen} className="btn btn-outline-primary mx-1 mb-2">Send Message</button>
+                <a href={resume} download="ArifulIslamMahinResume" className="btn btn-primary mx-1 mb-2">Download Resume</a>
                 <Dialog className="w-md-50 mx-auto w-75" fullWidth={true}
                     open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
                 <DialogTitle className='text-center' id="form-dialog-title"><h3>Get In Touch</h3></DialogTitle>
