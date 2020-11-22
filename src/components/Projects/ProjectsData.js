@@ -27,7 +27,7 @@ const ProjectsData = [
         title:'Online Course',
         picture:'https://iili.io/3Olswl.md.png',
         description:'A online course app using',
-        features:'React, Bootstrap and HTML3',
+        features:'React, Bootstrap and HTML5',
         github:'https://github.com/ariful-islam-mahin/online-course-website',
         website:'https://online-courses-website.netlify.app'
     },

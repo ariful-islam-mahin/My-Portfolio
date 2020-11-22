@@ -24,7 +24,7 @@
 .blogs:before{
     content: '';
     position: absolute;
-    bottom: -48px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     height: 200px;
@@ -63,4 +63,8 @@
     .text-box{
         width: 300px;
     }
+}
+
+.blog-details{
+    height: 120px;
 }

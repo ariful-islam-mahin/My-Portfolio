@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Blog from '../Blog/Blog';
+import BlogsData from './BlogsData';
 
 const Blogs = () => {
+    const [blogs, setBlogs] = useState([]);
+    useEffect(() => {
+        setBlogs(BlogsData)
+    }, [])
+
     return (
-        <div id="blogs" className="text-center px-5  blogs">
-            <div className="container">
-                <h1 className="mt-5">Blogs</h1>
-                <p style={{paddingBottom:'150px'}} className="my-5 pt-5">Coming soon...</p>
+        <div id="blogs" className="blogs pb-5">
+            <div className="container px-5 mb-5">
+                <h1 className="mt-5">Blogs Posts</h1>
+                <div className="row py-4">
+                    {
+                        blogs.map((blog, idx) => <Blog key={idx} blog={blog}/>)
+                    }
+                </div>
             </div>
         </div>
     );
