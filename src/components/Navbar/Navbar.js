@@ -24,7 +24,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#about">About <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="btn btn-primary" href="https://drive.google.com/file/d/1emnp68MNkow3llI1MKgiZKvn_kOs5qyC/view?usp=sharing" target="_blank">Resume</a>
+                            <a className="btn btn-primary" href="https://drive.google.com/file/d/1lia4FwVRkksaizL1zgJo2q850rdSAZqP/view?usp=sharing" target="_blank">Resume</a>
                         </li>
                     </ul>
                 </div>

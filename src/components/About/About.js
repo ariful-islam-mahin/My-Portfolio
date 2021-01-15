@@ -1,6 +1,6 @@
 import { Dialog, DialogActions, DialogContent, DialogTitle } from '@material-ui/core';
 import React, { useState } from 'react';
-import resume from '../../Resume.pdf';
+import resume from '../../Resume_of_Ariful_Islam.pdf';
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -47,7 +47,7 @@ const About = () => {
                     I have come in the web development world only for my passion. I love creating and developing websites more than any other works.
                 </h5>
                 <button onClick={handleClickOpen} className="btn btn-outline-primary mx-1 mb-2">Send Message</button>
-                <a href={resume} download="ArifulIslamMahinResume" className="btn btn-primary mx-1 mb-2">Download Resume</a>
+                <a href={resume} download="Resume_of_Ariful_Islam" className="btn btn-primary mx-1 mb-2">Download Resume</a>
                 <Dialog className="w-md-50 mx-auto w-75" fullWidth={true}
                     open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
                 <DialogTitle className='text-center' id="form-dialog-title"><h3>Get In Touch</h3></DialogTitle>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import resume from '../../Resume.pdf';
+import resume from '../../Resume_of_Ariful_Islam.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,7 +19,7 @@ const Header = () => {
                 <FontAwesomeIcon className="icon" icon={faGithubSquare} />
             </a>
             <br/>
-            <a href={resume} download="ArifulIslamMahinResume" className="btn btn-primary" >Download Resume</a>
+            <a href={resume} download="Resume_of_Ariful_Islam" className="btn btn-primary" >Download Resume</a>
         </div>
     );
 };
